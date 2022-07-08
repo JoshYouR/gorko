@@ -7,7 +7,7 @@ $css-vars: map-get($gorko-config, 'css-vars');
 /// Run the vars generator, regardless of whether they are defined,
 /// but only if they are enabled
 @if ($generate-css-vars == true) {
-  @include generate-css-vars($css-vars);
+@include generate-css-vars($css-vars);
 }
 
 /// Only run if there should be an output
@@ -15,3 +15,14 @@ $css-vars: map-get($gorko-config, 'css-vars');
   // Generate utility classes
   @include generate-utility-classes();
 }
+
+* {
+  @each $class, $config in $gorko-config {
+      $insert-var: map-get($config, 'insert-css-vars');
+      @if $insert-var {
+        $prop: map-get($config, 'property');
+        --#{$prop}: initial;
+      }
+    }
+} 
+

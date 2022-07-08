@@ -17,7 +17,8 @@
   $property: map-get($collection, 'property');
   $use-css-vars: map-get($collection, 'css-vars');
   $vars-key: '';
-
+  $insert-css-vars: map-get($collection, 'insert-css-vars');
+  $extra-css-vars-declarations: map-get($collection, 'extra-css-vars-declarations');
   $selector: get-namespace('classes') + $selector;
 
   /// If this collection is using CSS vars, the items come from the
@@ -37,7 +38,9 @@
         $property,
         $items,
         $use-css-vars,
-        $vars-key
+        $vars-key,
+        $insert-css-vars,
+        $extra-css-vars-declarations
       );
     }
 
@@ -48,7 +51,9 @@
           $property,
           $items,
           $use-css-vars,
-          $vars-key
+          $vars-key,
+          $insert-css-vars,
+          $extra-css-vars-declarations
         );
       }
     }
