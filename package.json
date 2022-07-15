@@ -1,5 +1,5 @@
 {
-  "name": "gorko",
+  "name": "@joshyour/gorko",
   "version": "0.9.1",
   "description": "A tiny Sass token class generator.",
   "main": "gorko.scss",
@@ -14,13 +14,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hankchizljaw/gorko.git"
+    "url": "git+https://github.com/joshyour/gorko.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hankchizljaw/gorko/issues"
+    "url": "https://github.com/joshyour/gorko/issues"
   },
-  "homepage": "https://github.com/hankchizljaw/gorko#readme"
+  "homepage": "https://github.com/joshyour/gorko#readme",
+  "directories": {
+    "test": "test"
+  }
 }

@@ -1,6 +1,8 @@
-# Gorko
+# A Gorko Fork (Forko)
 
 A tiny, Sass-powered design-token led utility class generator, with handy helpers, that helps you to power your front-ends with a single source of truth.
+
+This is a fork of Gorko. It adds some extra functionality, specific to my personal projects development.
 
 ## Table of contents
 
